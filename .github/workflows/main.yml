@@ -10,9 +10,14 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
     steps:
       - uses: actions/checkout@v4
-
+        with:
+            fetch-depth: 0
+            fetch-tags: true
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -21,10 +26,18 @@ jobs:
         working-directory: monorepo
         run: node common/scripts/install-run-rush.js install
 
+      - name: Update Change Logs & Bump Version
+        working-directory: monorepo
+        run: node common/scripts/install-run-rush.js publish --apply
+
       - name: Rush build (build + test all packages)
         working-directory: monorepo
         run: node common/scripts/install-run-rush.js build --verbose
-
+      
+      - name: Publish NPM
+        working-directory: monorepo
+        run: node common/scripts/install-run-rush.js publish --apply --target-branch targetBranch --publish
+        
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3

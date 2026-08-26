@@ -12,7 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+        with:
+            fetch-depth: 0
+            fetch-tags: true
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -27,4 +29,4 @@ jobs:
 
       - name: Verify Changes
         working-directory: monorepo
-        run: rush change --verify
+        run: node common/scripts/install-run-rush.js change --verify
