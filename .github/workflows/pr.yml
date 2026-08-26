@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Rush install
+        working-directory: monorepo
+        run: node common/scripts/install-run-rush.js install
+
+      - name: Rush build (build + test all packages)
+        working-directory: monorepo
+        run: node common/scripts/install-run-rush.js build --verbose
+
+      - name: Verify Changes
+        working-directory: monorepo
+        run: rush change --verify
