@@ -63,7 +63,7 @@ jobs:
         with:
             fetch-depth: 0
             fetch-tags: true
-            
+
       - name: Configure Git
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -75,4 +75,6 @@ jobs:
 
       - name: Publish NPM
         working-directory: monorepo
-        run: node common/scripts/install-run-rush.js publish --apply --target-branch main --publish
+        run: |
+          node common/scripts/install-run-rush.js install
+          node common/scripts/install-run-rush.js publish --apply --target-branch main --publish
