@@ -9,7 +9,10 @@
         />
       </template>
 
-      <v-app-bar-title>mpdecimate playground</v-app-bar-title>
+      <v-app-bar-title>
+        mpdecimate playground
+        <span class="app-version text-medium-emphasis">v{{ version }}</span>
+      </v-app-bar-title>
 
       <template #append>
         <v-btn text="About" @click="isAboutOpen = true" />
@@ -72,6 +75,7 @@
   import UploadVideo from '@/components/UploadVideo.vue'
   import Visualize from '@/components/Visualize.vue'
 
+  const version = __APP_VERSION__
   const theme = useTheme()
   const stage = ref<Stage>({ name: 'initialize-webgpu' })
   const isAboutOpen = ref(false)
@@ -110,3 +114,9 @@
     URL.revokeObjectURL(video.objectUrl)
   }
 </script>
+
+<style scoped>
+  .app-version {
+    font-size: 0.625rem;
+  }
+</style>
