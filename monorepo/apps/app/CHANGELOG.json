@@ -1,0 +1,23 @@
+{
+  "name": "mpdecimate-playground",
+  "entries": [
+    {
+      "version": "1.0.1",
+      "tag": "mpdecimate-playground_v1.0.1",
+      "date": "Wed, 26 Aug 2026 07:29:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add version to navigation bar"
+          },
+          {
+            "comment": "Add Change Log button to navigation bar"
+          },
+          {
+            "comment": "Coming Soon"
+          }
+        ]
+      }
+    }
+  ]
+}
