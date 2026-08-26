@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "mpdecimate-playground",
+      "comment": "Render markdown in change log dialogue",
+      "type": "patch"
+    }
+  ],
+  "packageName": "mpdecimate-playground"
+}
