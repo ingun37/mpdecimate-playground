@@ -2,6 +2,18 @@
   "name": "mpdecimate-playground",
   "entries": [
     {
+      "version": "1.0.3",
+      "tag": "mpdecimate-playground_v1.0.3",
+      "date": "Wed, 26 Aug 2026 09:34:28 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Render markdown in change log dialogue"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.2",
       "tag": "mpdecimate-playground_v1.0.2",
       "date": "Wed, 26 Aug 2026 08:43:36 GMT",

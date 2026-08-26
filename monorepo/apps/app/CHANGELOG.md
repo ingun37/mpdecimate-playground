@@ -1,6 +1,13 @@
 # Change Log - mpdecimate-playground
 
-This log was last generated on Wed, 26 Aug 2026 08:43:36 GMT and should not be manually modified.
+This log was last generated on Wed, 26 Aug 2026 09:34:28 GMT and should not be manually modified.
+
+## 1.0.3
+Wed, 26 Aug 2026 09:34:28 GMT
+
+### Patches
+
+- Render markdown in change log dialogue
 
 ## 1.0.2
 Wed, 26 Aug 2026 08:43:36 GMT
