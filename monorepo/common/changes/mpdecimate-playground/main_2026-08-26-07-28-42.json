@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "mpdecimate-playground",
+      "comment": "Coming Soon",
+      "type": "patch"
+    }
+  ],
+  "packageName": "mpdecimate-playground"
+}
