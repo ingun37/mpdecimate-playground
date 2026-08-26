@@ -1,7 +1,9 @@
 <template>
   <v-dialog v-model="isOpen" max-width="480">
     <v-card title="Change Log">
-      <v-card-text />
+      <v-card-text>
+        Coming soon
+      </v-card-text>
 
       <v-card-actions>
         <v-spacer />
