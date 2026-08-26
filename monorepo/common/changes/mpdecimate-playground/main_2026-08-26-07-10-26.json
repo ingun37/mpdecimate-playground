@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "mpdecimate-playground",
+      "comment": "Add version to navigation bar",
+      "type": "patch"
+    }
+  ],
+  "packageName": "mpdecimate-playground"
+}
