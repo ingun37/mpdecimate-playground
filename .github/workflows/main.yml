@@ -36,7 +36,7 @@ jobs:
       
       - name: Publish NPM
         working-directory: monorepo
-        run: node common/scripts/install-run-rush.js publish --apply --target-branch targetBranch --publish
+        run: node common/scripts/install-run-rush.js publish --apply --target-branch main --publish
         
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main'
