@@ -15,6 +15,7 @@
       </v-app-bar-title>
 
       <template #append>
+        <v-btn text="Change Log" @click="isChangeLogOpen = true" />
         <v-btn text="About" @click="isAboutOpen = true" />
         <v-btn icon="mdi-theme-light-dark" @click="theme.cycle()" />
       </template>
@@ -59,6 +60,7 @@
     </v-main>
 
     <AboutDialog v-model="isAboutOpen" />
+    <ChangeLogDialog v-model="isChangeLogOpen" />
   </v-app>
 </template>
 
@@ -69,6 +71,7 @@
   import { computed, ref } from 'vue'
   import { useTheme } from 'vuetify'
   import AboutDialog from '@/components/AboutDialog.vue'
+  import ChangeLogDialog from '@/components/ChangeLogDialog.vue'
   import DetectChromaSubsampling from '@/components/DetectChromaSubsampling.vue'
   import InitializeWebGPU from '@/components/InitializeWebGPU.vue'
   import PrepareVisualize from '@/components/PrepareVisualize.vue'
@@ -79,6 +82,7 @@
   const theme = useTheme()
   const stage = ref<Stage>({ name: 'initialize-webgpu' })
   const isAboutOpen = ref(false)
+  const isChangeLogOpen = ref(false)
   const hasVideo = computed(() => 'video' in stage.value)
 
   function onWebGPUReady (context: WebGPUContext) {
