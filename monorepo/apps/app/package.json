@@ -2,7 +2,7 @@
   "name": "mpdecimate-playground",
   "private": false,
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "files": [],
   "scripts": {
     "dev": "vite",

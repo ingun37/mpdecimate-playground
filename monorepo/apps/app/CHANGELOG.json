@@ -2,6 +2,18 @@
   "name": "mpdecimate-playground",
   "entries": [
     {
+      "version": "1.0.2",
+      "tag": "mpdecimate-playground_v1.0.2",
+      "date": "Wed, 26 Aug 2026 08:28:45 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Import CHANGELOG.md into Change Log Dialogue"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.1",
       "tag": "mpdecimate-playground_v1.0.1",
       "date": "Wed, 26 Aug 2026 07:29:05 GMT",
