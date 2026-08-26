@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "mpdecimate-playground",
+      "comment": "Import CHANGELOG.md into Change Log Dialogue",
+      "type": "patch"
+    }
+  ],
+  "packageName": "mpdecimate-playground"
+}
