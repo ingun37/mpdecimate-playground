@@ -1,8 +1,9 @@
 {
-  "name": "app",
-  "private": true,
+  "name": "mpdecimate-playground",
+  "private": false,
   "type": "module",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "files": [],
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",

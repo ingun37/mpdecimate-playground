@@ -201,7 +201,7 @@
      * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
      * to retrieve the latest activity for the remote main branch.
      */
-    // "url": "https://github.com/microsoft/rush-example",
+    "url": "https://github.com/ingun37/mpdecimate-playground"
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
      * The default value is "main"
@@ -316,8 +316,9 @@
       "projectFolder": "libs/webgpu-impl"
     },
     {
-      "packageName": "app",
-      "projectFolder": "apps/app"
+      "packageName": "mpdecimate-playground",
+      "projectFolder": "apps/app",
+      "shouldPublish": true
     }
     // {
     //   /**
