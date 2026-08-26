@@ -4,6 +4,9 @@
   "type": "module",
   "version": "1.0.1",
   "files": [],
+  "repository": {
+    "url": "https://github.com/ingun37/mpdecimate-playground"
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
