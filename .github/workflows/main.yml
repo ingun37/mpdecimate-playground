@@ -59,15 +59,16 @@ jobs:
       id-token: write
       contents: write
     steps:
+      - uses: actions/checkout@v4
+        with:
+            fetch-depth: 0
+            fetch-tags: true
+            
       - name: Configure Git
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-      - uses: actions/checkout@v4
-        with:
-            fetch-depth: 0
-            fetch-tags: true
       - uses: actions/setup-node@v4
         with:
           node-version: 24
