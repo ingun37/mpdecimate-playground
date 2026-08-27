@@ -89,18 +89,36 @@
                 <p :class="comparison.luma.overLo > comparison.lumaLoLimit ? 'text-success' : 'text-error'">
                   Lo luma Y : {{ comparison.luma.overLo }} &gt; {{ comparison.lumaLoLimit }}
                 </p>
+
+                <v-progress-linear
+                  :color="comparison.luma.overLo > comparison.lumaLoLimit ? 'success' : 'error'"
+                  :max="comparison.lumaLoLimit"
+                  :model-value="comparison.luma.overLo"
+                />
               </v-col>
 
               <v-col>
                 <p :class="comparison.u.overLo > comparison.chromaLoLimit ? 'text-success' : 'text-error'">
                   Lo chroma U : {{ comparison.u.overLo }} &gt; {{ comparison.chromaLoLimit }}
                 </p>
+
+                <v-progress-linear
+                  :color="comparison.u.overLo > comparison.chromaLoLimit ? 'success' : 'error'"
+                  :max="comparison.chromaLoLimit"
+                  :model-value="comparison.u.overLo"
+                />
               </v-col>
 
               <v-col>
                 <p :class="comparison.v.overLo > comparison.chromaLoLimit ? 'text-success' : 'text-error'">
                   Lo chroma V : {{ comparison.v.overLo }} &gt; {{ comparison.chromaLoLimit }}
                 </p>
+
+                <v-progress-linear
+                  :color="comparison.v.overLo > comparison.chromaLoLimit ? 'success' : 'error'"
+                  :max="comparison.chromaLoLimit"
+                  :model-value="comparison.v.overLo"
+                />
               </v-col>
             </v-row>
           </v-card-text>
