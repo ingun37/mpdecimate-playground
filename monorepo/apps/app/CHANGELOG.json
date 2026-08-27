@@ -2,6 +2,18 @@
   "name": "mpdecimate-playground",
   "entries": [
     {
+      "version": "1.0.4",
+      "tag": "mpdecimate-playground_v1.0.4",
+      "date": "Thu, 27 Aug 2026 04:36:12 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Show lo frac guage bar"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.3",
       "tag": "mpdecimate-playground_v1.0.3",
       "date": "Wed, 26 Aug 2026 09:34:28 GMT",
