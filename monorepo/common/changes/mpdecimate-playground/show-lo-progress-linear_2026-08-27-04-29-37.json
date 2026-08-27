@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "mpdecimate-playground",
+      "comment": "Show lo frac guage bar",
+      "type": "patch"
+    }
+  ],
+  "packageName": "mpdecimate-playground"
+}
